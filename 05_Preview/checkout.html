@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Revora Life Store</title>
+  <meta name="description" content="Secure checkout for your PEMF system order. Fast global shipping and expert support.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand"><img src="assets/images/logo-header.jpg" alt="Revora Life" style="height: 60px; width: auto;"></a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <div class="nav-item">
+          <a href="what-is-pemf.html" class="nav-link">Learn <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="what-is-pemf.html">What is PEMF?</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="research.html">Research & Studies</a>
+            <a href="faq.html">FAQs</a>
+          </div>
+        </div>
+        <a href="benefits.html">Benefits</a>
+        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Resources <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="compare.html">Compare the Market</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="suppliers.html" class="nav-link">Store <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="suppliers.html"><strong>All Products</strong></a>
+            <hr style="margin: 0.5rem 0; border: none; border-top: 1px solid #E2E8F0;">
+            <a href="swiss-bionic.html">Swiss Bionics</a>
+            <a href="olylife.html">OlyLife</a>
+            <a href="qilife.html">QiLife</a>
+          </div>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div class="cart-icon" onclick="Cart.openDrawer()" title="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <div class="container">
+      
+      <div id="checkout-empty" class="checkout-empty" style="display:none;">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--medium-grey)" stroke-width="1.5" style="margin-bottom:1rem;"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <h2>Your cart is empty</h2>
+        <p style="color:var(--medium-grey);margin-bottom:1.5rem;">Add some PEMF products to get started.</p>
+        <a href="suppliers.html" class="button button-primary">Browse Products</a>
+      </div>
+
+      <div id="checkout-form" class="checkout-grid">
+        
+        <!-- Left Column: Forms -->
+        <div>
+          <!-- Checkout Details -->
+          <div class="checkout-panel" style="margin-bottom:1.5rem;">
+            <h2>1. Review Your Order</h2>
+            <p style="color:var(--medium-grey);line-height:1.6;margin-bottom:0;">Check your products and totals on this page before continuing to secure Stripe checkout.</p>
+          </div>
+
+          <div class="checkout-panel" style="margin-bottom:1.5rem;">
+            <h2>2. Contact & Shipping</h2>
+            <p style="color:var(--medium-grey);line-height:1.6;margin-bottom:0;">Your email, phone, billing address, and shipping address are collected on Stripe's secure checkout page.</p>
+          </div>
+
+          <!-- Payment -->
+          <div class="checkout-panel">
+            <h2>3. Secure Payment</h2>
+            <p style="font-size:0.95rem;color:var(--medium-grey);margin-bottom:1rem;line-height:1.6;">Payments are processed securely by Stripe. Card details are entered on Stripe's encrypted checkout page — Revora Life does not store card numbers.</p>
+
+            <div class="payment-methods" aria-label="Accepted payment methods">
+              <div class="payment-method active">
+                <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="#635BFF"/><text x="24" y="30" text-anchor="middle" fill="white" font-size="11" font-weight="700">Stripe</text></svg>
+                <div class="payment-method-label">Card</div>
+              </div>
+              <div class="payment-method">
+                <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="#000"/><text x="24" y="30" text-anchor="middle" fill="white" font-size="10" font-weight="700">Apple</text></svg>
+                <div class="payment-method-label">Apple Pay*</div>
+              </div>
+              <div class="payment-method">
+                <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="8" fill="#111827"/><text x="24" y="30" text-anchor="middle" fill="white" font-size="10" font-weight="700">More</text></svg>
+                <div class="payment-method-label">Stripe</div>
+              </div>
+            </div>
+
+            <div id="checkout-message" style="display:none;margin-bottom:1rem;padding:1rem;border-radius:var(--border-radius);font-size:0.95rem;"></div>
+
+            <button id="stripe-checkout-button" class="btn-checkout-submit" onclick="startStripeCheckout()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Pay Securely with Stripe
+            </button>
+            
+            <div class="secure-checkout-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              SSL secure checkout. *Wallet availability depends on device, browser, and Stripe account settings.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div>
+          <div class="checkout-order-summary">
+            <h3>Order Summary</h3>
+            <div id="checkout-items">
+              <!-- Populated by JS -->
+            </div>
+            <div class="checkout-totals">
+              <div class="checkout-total-row"><span>Subtotal</span><span id="summary-subtotal">$0.00 USD</span></div>
+              <div class="checkout-total-row"><span>Shipping</span><span id="summary-shipping">Calculated</span></div>
+              <div class="checkout-total-row"><span>Tax</span><span id="summary-tax">Calculated at next step</span></div>
+              <div class="checkout-total-row grand-total"><span>Total</span><span id="summary-total">$0.00 USD</span></div>
+            </div>
+          </div>
+
+          <!-- Trust badges -->
+          <div style="margin-top:1.5rem;padding:1.5rem;background:white;border-radius:var(--border-radius-lg);box-shadow:0 4px 16px rgba(0,0,0,0.04);">
+            <div class="checkout-trust">
+              <div class="checkout-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                SSL Secure
+              </div>
+              <div class="checkout-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                Verified
+              </div>
+              <div class="checkout-trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                24/7 Support
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="site-top-link" aria-label="Back to top section" style="background: transparent; padding: 0 1rem;">
+      <a href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        TOP
+      </a>
+    </div>
+</main>
+
+  <!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/images/creatives/footer-logo-final.jpg" alt="Revora Life" style="height: 90px; width: auto;"></div>
+          <p class="footer-about">Your premium destination for PEMF wellness technology.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+            <li><a href="swiss-bionic.html">Swiss Bionic</a></li>
+            <li><a href="olylife.html">OlyLife</a></li>
+            <li><a href="qilife.html">QiLife</a></li>
+            <li><a href="suppliers.html">All Suppliers / Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Learn</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-pemf.html">What is PEMF?</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal-row">
+        <a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-service.html">Terms of Service</a><span>|</span><a href="sitemap.html">Sitemap</a>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.15); margin-top: 2rem; padding-top: 1.5rem; font-size: 0.75rem; line-height: 1.5; opacity: 0.7; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <p>This website provides general information only and is not medical advice; products are not intended to diagnose, treat, cure, or prevent disease.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Revora Life. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script>
+    function showCheckoutMessage(message, type = 'info') {
+      const box = document.getElementById('checkout-message');
+      if (!box) return;
+      box.textContent = message;
+      box.style.display = '';
+      box.style.background = type === 'error' ? '#FEF2F2' : type === 'success' ? '#ECFDF5' : '#EFF6FF';
+      box.style.color = type === 'error' ? '#991B1B' : type === 'success' ? '#065F46' : '#1E3A8A';
+      box.style.border = type === 'error' ? '1px solid #FECACA' : type === 'success' ? '1px solid #A7F3D0' : '1px solid #BFDBFE';
+    }
+
+    function renderCheckout() {
+      const params = new URLSearchParams(window.location.search);
+      const paid = params.get('success') === '1';
+      const canceled = params.get('canceled') === '1';
+
+      if (paid && Cart.clear) {
+        Cart.clear();
+      }
+
+      const cart = Cart.getCart();
+      const emptyDiv = document.getElementById('checkout-empty');
+      const formDiv = document.getElementById('checkout-form');
+      const itemsContainer = document.getElementById('checkout-items');
+
+      if (paid) {
+        emptyDiv.style.display = '';
+        formDiv.style.display = 'none';
+        emptyDiv.innerHTML = `
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="1.8" style="margin-bottom:1rem;"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h2>Payment received</h2>
+          <p style="color:var(--medium-grey);margin-bottom:1.5rem;">Thank you. Your Stripe payment was completed successfully.</p>
+          <a href="suppliers.html" class="button button-primary">Continue Shopping</a>
+        `;
+        // Hide TOP link on payment received confirmation
+        const topLink = document.querySelector('.site-top-link');
+        if (topLink) topLink.style.display = 'none';
+        return;
+      }
+
+      if (cart.length === 0) {
+        emptyDiv.style.display = '';
+        formDiv.style.display = 'none';
+        return;
+      }
+
+      emptyDiv.style.display = 'none';
+      formDiv.style.display = '';
+      if (canceled) {
+        showCheckoutMessage('Checkout was cancelled. Your cart is still saved if you want to try again.', 'info');
+      }
+
+      let subtotal = 0;
+      itemsContainer.innerHTML = cart.map(item => {
+        const product = Cart.PRODUCTS[item.id];
+        if (!product) return '';
+        subtotal += product.price * item.qty;
+        return `
+          <div class="checkout-item" style="position:relative;">
+            <div class="checkout-item-img" style="background-image:url('${product.image}');"></div>
+            <div class="checkout-item-info">
+              <div class="checkout-item-name">${product.name}</div>
+              <div class="checkout-item-meta">Qty: ${item.qty} &middot; ${product.brand}</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.25rem;">
+              <div class="checkout-item-price">${Cart.formatPrice(product.price * item.qty)}</div>
+              <button onclick="removeCheckoutItem('${item.id}');" style="background:none;border:none;color:var(--medium-grey);font-size:0.75rem;cursor:pointer;text-decoration:underline;padding:0;">Remove</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const shipping = subtotal >= 5000 ? 0 : 1500;
+      const total = subtotal + shipping;
+
+      document.getElementById('summary-subtotal').textContent = Cart.formatPrice(subtotal);
+      document.getElementById('summary-shipping').textContent = shipping === 0 ? 'FREE' : Cart.formatPrice(shipping);
+      document.getElementById('summary-total').textContent = Cart.formatPrice(total);
+    }
+
+    function removeCheckoutItem(itemId) {
+      Cart.remove(itemId);
+      renderCheckout();
+    }
+
+    async function startStripeCheckout() {
+      const cart = Cart.getCart().filter(item => Cart.PRODUCTS[item.id]);
+      if (!cart.length) {
+        renderCheckout();
+        return;
+      }
+
+      const button = document.getElementById('stripe-checkout-button');
+      const original = button.innerHTML;
+      button.disabled = true;
+      button.style.opacity = '0.7';
+      button.innerHTML = 'Preparing secure checkout...';
+
+      try {
+        const response = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: cart.map(item => ({ id: item.id, qty: item.qty })) })
+        });
+        const data = await response.json();
+        if (!response.ok || !data.url) {
+          throw new Error(data.error || 'Stripe checkout could not be started.');
+        }
+        window.location.href = data.url;
+      } catch (error) {
+        showCheckoutMessage(error.message || 'Stripe checkout could not be started. Please try again.', 'error');
+        button.disabled = false;
+        button.style.opacity = '';
+        button.innerHTML = original;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', renderCheckout);
+  </script>
+</body>
+</html>

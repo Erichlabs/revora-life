@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Suppliers | Premium PEMF Brands | Revora Life</title>
+  <meta name="description" content="Discover world-leading PEMF suppliers: Swiss Bionic Solutions, OlyLife, and QiLife. Premium wellness technology curated for you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .supplier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .supplier-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #EDF2F7; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; cursor: pointer; }
+    .supplier-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .supplier-img { height: 220px; background: white; display: flex; align-items: center; justify-content: center; position: relative; }
+    .supplier-img img { max-width: 80%; max-height: 80%; object-fit: contain; }
+    .supplier-badge { position: absolute; top: 1rem; right: 1rem; background: var(--brand-blue); color: white; padding: 0.35rem 0.75rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+    .supplier-body { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
+    .supplier-name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; color: var(--deep-blue); margin-bottom: 0.5rem; }
+    .supplier-tagline { font-size: 0.85rem; color: var(--brand-blue); font-weight: 600; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .supplier-desc { font-size: 0.9rem; color: var(--medium-grey); line-height: 1.6; margin-bottom: 1.5rem; flex: 1; }
+    .supplier-footer { display: flex; gap: 0.75rem; }
+    .supplier-footer .button { flex: 1; text-align: center; }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand"><img src="assets/images/logo-header.jpg" alt="Revora Life" style="height: 60px; width: auto;"></a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <div class="nav-item">
+          <a href="what-is-pemf.html" class="nav-link">Learn <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="what-is-pemf.html">What is PEMF?</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="research.html">Research & Studies</a>
+            <a href="faq.html">FAQs</a>
+          </div>
+        </div>
+        <a href="benefits.html">Benefits</a>
+        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Resources <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="compare.html">Compare the Market</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="suppliers.html" class="nav-link">Store <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="suppliers.html"><strong>All Products</strong></a>
+            <hr style="margin: 0.5rem 0; border: none; border-top: 1px solid #E2E8F0;">
+            <a href="swiss-bionic.html">Swiss Bionics</a>
+            <a href="olylife.html">OlyLife</a>
+            <a href="qilife.html">QiLife</a>
+          </div>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div class="cart-icon" onclick="Cart.openDrawer()" title="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </div>
+        <a href="suppliers.html" class="header-cta">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="store-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:rgba(255,255,255,0.7);">Trusted Partners</p>
+        <h1>Our Valued Suppliers</h1>
+        <p>We partner with the world's leading health & technology manufacturers to bring you proven, premium wellness solutions.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="supplier-grid">
+          
+          <div class="supplier-card" onclick="window.location.href='swiss-bionic.html'" role="link" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){window.location.href='swiss-bionic.html'}" aria-label="View Swiss Bionic products">
+            <div class="supplier-img">
+              <img src="assets/images/supplier-swiss-bionic-logo.jpg" alt="Swiss Bionic Solutions" style="background: white; padding: 20px; border-radius: 8px; width: 108%; max-width: 108% !important;">
+              <span class="supplier-badge" style="background: #D4AF37;">Premium</span>
+            </div>
+            <div class="supplier-body">
+              <div class="supplier-name">Swiss Bionic Solutions</div>
+              <div class="supplier-tagline">Full Body Systems</div>
+              <div class="supplier-desc">Swiss-engineered PEMF systems trusted by wellness professionals worldwide. The iMRS and Omnium1 product lines represent the gold standard in full-body electromagnetic field therapy, combining decades of research with cutting-edge bio-feedback technology.</div>
+              <div class="supplier-footer">
+                <a href="swiss-bionic.html" onclick="event.stopPropagation()" class="button button-primary" style="transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-align: center;" onmouseover="this.style.background='#2d814f';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(56,161,105,0.4)'" onmouseout="this.style.background='var(--wellness-green)';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Products</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="supplier-card" onclick="window.location.href='olylife.html'" role="link" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){window.location.href='olylife.html'}" aria-label="View OlyLife products">
+            <div class="supplier-img">
+              <img src="assets/images/supplier-olylife-logo.jpg" alt="OlyLife" style="background: white; padding: 20px; border-radius: 8px; width: 108%; max-width: 108% !important;">
+              <span class="supplier-badge" style="background:#DD6B20;">Innovation</span>
+            </div>
+            <div class="supplier-body">
+              <div class="supplier-name">OlyLife</div>
+              <div class="supplier-tagline">Localized Treatment Products</div>
+              <div class="supplier-desc">Pioneering terahertz and PEMF combined therapy devices. OlyLife's Tera-P series integrates heat, terahertz waves, and pulsed electromagnetic fields for multi-modality wellness support in an elegant, user-friendly design.</div>
+              <div class="supplier-footer">
+                <a href="olylife.html" onclick="event.stopPropagation()" class="button button-primary" style="transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-align: center;" onmouseover="this.style.background='#2d814f';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(56,161,105,0.4)'" onmouseout="this.style.background='var(--wellness-green)';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Products</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="supplier-card" onclick="window.location.href='qilife.html'" role="link" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){window.location.href='qilife.html'}" aria-label="View QiLife products">
+            <div class="supplier-img">
+              <img src="assets/images/supplier-qilife-logo.jpg" alt="QiLife" style="background: white; width: 97%; max-width: 97% !important; padding: 20px; border-radius: 8px;">
+              <span class="supplier-badge" style="background:#38A169;">Frequency Tech</span>
+            </div>
+            <div class="supplier-body">
+              <div class="supplier-name">QiLife</div>
+              <div class="supplier-tagline">Personal &middot; Office &middot; Home &middot; Clinic</div>
+              <div class="supplier-desc">Advanced frequency-based PEMF technology for every setting. From portable Qi Coils to full Resonant Wave systems, QiLife makes frequency wellness accessible for personal use, professional clinics, and everything in between.</div>
+              <div class="supplier-footer">
+                <a href="qilife.html" onclick="event.stopPropagation()" class="button button-primary" style="transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-align: center;" onmouseover="this.style.background='#2d814f';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(56,161,105,0.4)'" onmouseout="this.style.background='var(--wellness-green)';this.style.transform='translateY(0)';this.style.boxShadow='none'">View Products</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</section>
+    <div class="site-top-link" aria-label="Back to top section" style="background: transparent; padding: 0 1rem;">
+      <a href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        TOP
+      </a>
+    </div>
+<!-- Arc Divider White to Blue -->
+    <div style="height: 60px; overflow: hidden; background: white;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+        <path d="M0,60 Q720,0 1440,60 L1440,60 L0,60 Z" fill="#1E5AAF"/>
+      </svg>
+    </div>
+<!-- CTA Section -->
+    <section class="section cta-section" style="background: #1E5AAF;">
+      <div class="container">
+        <h2>Ready to Experience PEMF?</h2>
+        <p>Explore our educational resources to understand PEMF technology, then choose the right Body Repair System for your wellness goals.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="suppliers.html" class="button button-primary" style="transition: all 0.3s ease;" onmouseover="this.style.background='#2d814f';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(56,161,105,0.4)'" onmouseout="this.style.background='var(--wellness-green)';this.style.transform='translateY(0)';this.style.boxShadow='none'">Shop PEMF Systems</a>
+          <a href="what-is-pemf.html" class="button button-secondary" style="background: transparent; color: white; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.background='white';this.style.color='#1E5AAF';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='transparent';this.style.color='white';this.style.transform='translateY(0)'">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Arc Divider Blue to Dark Blue -->
+    <div style="height: 60px; overflow: hidden; background: #1E5AAF;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+        <path d="M0,60 Q720,0 1440,60 L1440,60 L0,60 Z" fill="#00163B"/>
+      </svg>
+    </div>
+</main>
+
+  <footer class="site-footer" style="background: #00163B;">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/images/creatives/footer-logo-final.jpg" alt="Revora Life" style="height: 90px; width: auto;"></div>
+          <p class="footer-about">Your premium destination for PEMF wellness technology.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+            <li><a href="swiss-bionic.html">Swiss Bionic</a></li>
+            <li><a href="olylife.html">OlyLife</a></li>
+            <li><a href="qilife.html">QiLife</a></li>
+            <li><a href="suppliers.html">All Suppliers / Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Learn</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-pemf.html">What is PEMF?</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal-row">
+        <a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-service.html">Terms of Service</a><span>|</span><a href="sitemap.html">Sitemap</a>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.15); margin-top: 2rem; padding-top: 1.5rem; font-size: 0.75rem; line-height: 1.5; opacity: 0.7; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <p>This website provides general information only and is not medical advice; products are not intended to diagnose, treat, cure, or prevent disease.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Revora Life. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

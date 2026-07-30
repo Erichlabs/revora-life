@@ -1,0 +1,8 @@
+{
+  "name": "revora-life-preview",
+  "version": "1.0.0",
+  "description": "Revora Life - Premium PEMF Wellness Website Preview",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

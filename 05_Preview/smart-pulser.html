@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pulser | PEMF Systems | Revora Life</title>
+  <meta name="description" content="Smart Pulser PEMF systems by Swiss Bionic Solutions. 5 packages plus S.Wrap accessory. New 2026 fiber coil technology.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .product-detail-hero { background: linear-gradient(135deg, #00163B 0%, #1E5AAF 100%); color: white; padding: 3rem 0; }
+    .package-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .package-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 2px solid #E2E8F0; display: flex; flex-direction: column; }
+    .package-card.featured { border: 2px solid var(--brand-blue); }
+    .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 100px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+    .badge-new { background: linear-gradient(135deg, #38A169, #2F855A); color: white; }
+    .badge-popular { background: linear-gradient(135deg, #E53E3E, #C53030); color: white; }
+    .badge-sleep { background: linear-gradient(135deg, #805AD5, #6B46C1); color: white; }
+    .badge-couples { background: linear-gradient(135deg, #D69E2E, #B7791F); color: white; }
+    .badge-accessory { background: linear-gradient(135deg, #718096, #4A5568); color: white; }
+    .price { font-size: 1.75rem; font-weight: 700; color: var(--brand-blue); margin: 1rem 0; }
+    .includes-list { list-style: none; padding: 0; margin: 1rem 0; flex-grow: 1; }
+    .includes-list li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; font-size: 0.9rem; color: var(--dark-grey); }
+    .includes-list li::before { content: "✓"; position: absolute; left: 0; color: var(--wellness-green); font-weight: 700; }
+    .button-primary { text-align: center; }
+    .package-card { transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; }
+    .package-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand"><img src="assets/images/logo-header.jpg" alt="Revora Life" style="height: 60px; width: auto;"></a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <div class="nav-item">
+          <a href="what-is-pemf.html" class="nav-link">Learn <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="what-is-pemf.html">What is PEMF?</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="research.html">Research & Studies</a>
+            <a href="faq.html">FAQs</a>
+          </div>
+        </div>
+        <a href="benefits.html">Benefits</a>
+        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Resources <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="compare.html">Compare the Market</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="suppliers.html" class="nav-link">Store <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="suppliers.html"><strong>All Products</strong></a>
+            <hr style="margin: 0.5rem 0; border: none; border-top: 1px solid #E2E8F0;">
+            <a href="swiss-bionic.html">Swiss Bionics</a>
+            <a href="olylife.html">OlyLife</a>
+            <a href="qilife.html">QiLife</a>
+          </div>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div class="cart-icon" onclick="Cart.openDrawer()" title="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </div>
+        <a href="suppliers.html" class="header-cta">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-detail-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:rgba(255,255,255,0.7);text-align:center;"><a href="swiss-bionic.html" style="color:inherit;text-decoration:none;">Swiss Bionic Solutions</a> / German Made</p>
+        <h1 style="text-align:center;">Smart Pulser</h1>
+        <p style="text-align:center;">The new 2026 PEMF system with inductive fiber coil technology</p>
+      </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div style="background: var(--silver); border-bottom: 1px solid #E2E8F0;">
+      <div class="container" style="padding: 0.75rem 0;">
+        <nav style="font-size: 0.85rem; color: var(--medium-grey);">
+          <a href="/" style="color: var(--brand-blue); text-decoration: none;">Home</a>
+          <span style="margin: 0 0.5rem; color: var(--medium-grey);">/</span>
+          <a href="suppliers.html" style="color: var(--brand-blue); text-decoration: none;">Store</a>
+          <span style="margin: 0 0.5rem; color: var(--medium-grey);">/</span>
+          <a href="swiss-bionic.html" style="color: var(--brand-blue); text-decoration: none;">Swiss Bionic Solutions</a>
+          <span style="margin: 0 0.5rem; color: var(--medium-grey);">/</span>
+          <span style="color: var(--dark-grey); font-weight: 600;">Smart Pulser</span>
+        </nav>
+      </div>
+    </div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+          <p class="eyebrow">Choose Your System</p>
+          <h2 style="font-family:var(--font-display);color:var(--deep-blue);margin-bottom:1rem;">Smart Pulser Packages</h2>
+          <p style="color:var(--medium-grey);">Four packages plus S.Bed Applicator and S.Wrap accessories. New 2026 fiber coil technology - lighter, bendable, and more durable than ever.</p>
+        </div>
+
+        <div class="package-grid">
+          
+          <!-- Package 1: Basic Set -->
+          <div class="package-card">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-new">NEW 2026</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser Basic Set</h3>
+            <div class="price" style="text-align: center;">$2,769 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>Control Unit with Touch Screen</li>
+              <li>S-Mat (Full Body Applicator)</li>
+              <li>5 Automatic Preset Programs</li>
+              <li>8 copper coils, Triple Sawtooth</li>
+              <li>Fiber coil technology</li>
+            </ul>
+            <a href="smart-pulser-basic.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">Package 1 Details →</a>
+          </div>
+
+          <!-- Package 2: Complete Set -->
+          <div class="package-card featured">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-popular"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px;vertical-align:middle;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Most Popular</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser Complete Set</h3>
+            <div class="price" style="text-align: center;">$3,079 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>Control Unit with Touch Screen</li>
+              <li>S-Mat (Full Body Applicator)</li>
+              <li>S-Wrap (Local Applicator)</li>
+              <li>5 Automatic Preset Programs</li>
+              <li>Full body + targeted therapy</li>
+            </ul>
+            <a href="smart-pulser-complete.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">Package 2 Details →</a>
+          </div>
+
+          <!-- Package 3: Uno Sleep Set -->
+          <div class="package-card">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-sleep"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px;vertical-align:middle;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> Sleep</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser Uno Sleep Set</h3>
+            <div class="price" style="text-align: center;">$2,849 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>Control Unit with Touch Screen</li>
+              <li>S-Bed (Mattress Applicator)</li>
+              <li>5 Automatic Preset Programs</li>
+              <li>Single person sleep system</li>
+              <li>Fits on your mattress</li>
+            </ul>
+            <a href="smart-pulser-uno-sleep.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">Package 3 Details →</a>
+          </div>
+
+          <!-- Package 4: Duo Sleep Set -->
+          <div class="package-card">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-couples"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px;vertical-align:middle;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> For Couples</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser Duo Sleep Set</h3>
+            <div class="price" style="text-align: center;">$4,019 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>Control Unit with Touch Screen</li>
+              <li>TWO S-Beds (2 Mattress Applicators)</li>
+              <li>Independent control each side</li>
+              <li>5 Automatic Preset Programs</li>
+              <li>Two person sleep system</li>
+            </ul>
+            <a href="smart-pulser-duo-sleep.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">Package 4 Details →</a>
+          </div>
+
+          <!-- Package 5: S.Bed Applicator -->
+          <div class="package-card">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-accessory">Accessory</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser S.Bed Applicator</h3>
+            <div class="price" style="text-align: center;">$1,299 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>One S.Bed mattress applicator</li>
+              <li>8 copper coils</li>
+              <li>Triple Sawtooth wave</li>
+              <li>Fiber coil technology</li>
+              <li>Requires Smart Pulser Controller</li>
+            </ul>
+            <a href="smart-pulser-sbed.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">More Details →</a>
+          </div>
+
+          <!-- Package 6: S.Wrap Accessory -->
+          <div class="package-card">
+            <div style="text-align: center; margin-bottom: 1rem;">
+              <span class="badge badge-accessory">Accessory</span>
+            </div>
+            <h3 style="font-family:var(--font-display);color:var(--deep-blue);text-align:center;margin-bottom:0.5rem;">Smart Pulser S.Wrap</h3>
+            <div class="price" style="text-align: center;">$329 <span style="font-size:0.85rem;font-weight:500;color:var(--medium-grey);">USD + GST</span></div>
+            <ul class="includes-list">
+              <li>One S.Wrap applicator</li>
+              <li>Square Wave for local treatment</li>
+              <li>Use on any part of the body</li>
+              <li>Flexible wrap design</li>
+              <li>Requires Smart Pulser Controller</li>
+            </ul>
+            <a href="smart-pulser-swrap.html" class="button button-primary" style="width: 100%; display: flex; align-items: center; justify-content: center;">More Details →</a>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: var(--soft-green); border-radius: 8px;">
+          <p style="color: #2e7d32; margin: 0; font-size: 0.95rem;"><strong>Free shipping</strong> to US & Canada on all packages. Australia shipping from $130-$230. All packages include 3-year warranty and expert setup support.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="site-top-link" aria-label="Back to top section" style="background: var(--silver); padding: 0 1rem;">
+      <a href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        TOP
+      </a>
+    </div>
+<!-- Arc Divider Grey to Blue -->
+    <div style="height: 60px; overflow: hidden; background: var(--silver);">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+        <path d="M0,60 Q720,0 1440,60 L1440,60 L0,60 Z" fill="#1E5AAF"/>
+      </svg>
+    </div>
+
+    <section class="section" style="background: #1E5AAF; color: white;">
+      <div class="container" style="text-align: center;">
+        <h2 style="font-family:var(--font-display);font-size:2rem;margin-bottom:1rem;">Ready to Experience Smart Pulser?</h2>
+        <p style="opacity: 0.9; max-width: 600px; margin: 0 auto 2rem;">Book a free consultation with our wellness specialists. We'll help you understand how Smart Pulser can support your wellness goals.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="button" style="background: white; color: var(--deep-blue); font-size: 1rem; padding: 1rem 2rem;">Book Free Consultation</a>
+          <a href="swiss-bionic.html" class="button" style="background: transparent; color: white; border: 2px solid white; font-size: 1rem; padding: 1rem 2rem;">View All SBS Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arc Divider Blue to Dark Blue -->
+    <div style="height: 60px; overflow: hidden; background: #1E5AAF;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+        <path d="M0,60 Q720,0 1440,60 L1440,60 L0,60 Z" fill="#00163B"/>
+      </svg>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/images/creatives/footer-logo-final.jpg" alt="Revora Life" style="height: 90px; width: auto;"></div>
+          <p class="footer-about">Your premium destination for PEMF wellness technology.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+            <li><a href="swiss-bionic.html">Swiss Bionic</a></li>
+            <li><a href="olylife.html">OlyLife</a></li>
+            <li><a href="qilife.html">QiLife</a></li>
+            <li><a href="suppliers.html">All Suppliers / Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Learn</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-pemf.html">What is PEMF?</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal-row">
+        <a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-service.html">Terms of Service</a><span>|</span><a href="sitemap.html">Sitemap</a>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.15); margin-top: 2rem; padding-top: 1.5rem; font-size: 0.75rem; line-height: 1.5; opacity: 0.7; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <p>This website provides general information only and is not medical advice; products are not intended to diagnose, treat, cure, or prevent disease.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Revora Life. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>

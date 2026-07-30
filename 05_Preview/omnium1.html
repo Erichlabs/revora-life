@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omnium1 | Swiss Bionic Solutions | Revora Life</title>
+  <meta name="description" content="Omnium1 portable full-body PEMF system with tablet control and wellness apps. Swiss Bionic Solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    .product-detail-hero { background: linear-gradient(135deg, #00163B 0%, #1E5AAF 100%); color: white; padding: 3rem 0; }
+    .product-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 900px) { .product-detail-grid { grid-template-columns: 1fr; } }
+    .product-gallery { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    .product-gallery-main { aspect-ratio: 4/3; background: linear-gradient(135deg, #F5F7FA 0%, #E8EDF3 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .product-gallery-thumbs { display: flex; gap: 0.75rem; }
+    .product-gallery-thumb { width: 80px; height: 60px; background: linear-gradient(135deg, #F5F7FA 0%, #E8EDF3 100%); border-radius: 6px; cursor: pointer; border: 2px solid transparent; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: var(--medium-grey); }
+    .product-gallery-thumb:hover { border-color: var(--brand-blue); }
+    .product-info h1 { font-family: var(--font-display); font-size: 2rem; color: var(--deep-blue); margin-bottom: 0.5rem; }
+    .product-info .brand { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-blue); font-weight: 600; margin-bottom: 0.5rem; }
+    .product-info .price { font-size: 1.75rem; font-weight: 700; color: var(--brand-blue); margin: 1rem 0; }
+    .product-info .price .usd { font-size: 0.9rem; font-weight: 500; color: var(--medium-grey); }
+    .product-features { margin: 2rem 0; }
+    .product-features h3 { font-family: var(--font-display); color: var(--deep-blue); margin-bottom: 1rem; }
+    .product-features ul { list-style: none; padding: 0; }
+    .product-features li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: var(--dark-grey); }
+    .product-features li::before { content: "✓"; position: absolute; left: 0; color: var(--wellness-green); font-weight: 700; }
+    .product-actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+    .product-actions .button { flex: 1; min-width: 200px; text-align: center; justify-content: center; }
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .specs-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #EDF2F7; }
+    .specs-table td:first-child { font-weight: 600; color: var(--dark-grey); width: 40%; }
+    .specs-table td:last-child { color: var(--medium-grey); }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand"><img src="assets/images/logo-header.jpg" alt="Revora Life" style="height: 60px; width: auto;"></a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <div class="nav-item">
+          <a href="what-is-pemf.html" class="nav-link">Learn <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="what-is-pemf.html">What is PEMF?</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="research.html">Research & Studies</a>
+            <a href="faq.html">FAQs</a>
+          </div>
+        </div>
+        <a href="benefits.html">Benefits</a>
+        <a href="about.html">About</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Resources <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="compare.html">Compare the Market</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="suppliers.html" class="nav-link">Store <span class="dropdown-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="suppliers.html"><strong>All Products</strong></a>
+            <hr style="margin: 0.5rem 0; border: none; border-top: 1px solid #E2E8F0;">
+            <a href="swiss-bionic.html">Swiss Bionics</a>
+            <a href="olylife.html">OlyLife</a>
+            <a href="qilife.html">QiLife</a>
+          </div>
+        </div>
+      </nav>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div class="cart-icon" onclick="Cart.openDrawer()" title="View Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </div>
+        <a href="suppliers.html" class="header-cta">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-detail-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:rgba(255,255,255,0.7);"><a href="suppliers.html" style="color:inherit;text-decoration:none;">Suppliers</a> / <a href="swiss-bionic.html" style="color:inherit;text-decoration:none;">Swiss Bionic Solutions</a></p>
+        <h1>Omnium1</h1>
+        <p>Portable full-body PEMF with tablet control and wellness apps</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="product-detail-grid">
+          <div class="product-gallery">
+            <div class="product-gallery-main"><span style="color:var(--medium-grey);font-size:0.9rem;">[Omnium1 Main Image]</span></div>
+            <div class="product-gallery-thumbs">
+              <div class="product-gallery-thumb">[Img 1]</div>
+              <div class="product-gallery-thumb">[Img 2]</div>
+              <div class="product-gallery-thumb">[Img 3]</div>
+              <div class="product-gallery-thumb">[Img 4]</div>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="brand">Swiss Bionic Solutions</div>
+            <h1>Omnium1</h1>
+            <div class="price">$4,295.00 <span class="usd">USD</span></div>
+            <p style="color:var(--medium-grey);line-height:1.6;">The Omnium1 combines Swiss PEMF engineering with modern tablet technology. Control your sessions via the Android-based interface, access wellness apps, and enjoy full-body therapy anywhere you go.</p>
+            <div class="product-features">
+              <h3>Key Features</h3>
+              <ul>
+                <li>Android tablet control unit</li>
+                <li>Full-body foldable mat</li>
+                <li>Integrated wellness apps</li>
+                <li>6 preset programs + customizable</li>
+                <li>Lightweight and portable design</li>
+                <li>Sawtooth and square waveforms</li>
+                <li>Organ clock functionality</li>
+                <li>Rechargeable battery operation</li>
+              </ul>
+            </div>
+            <div class="product-features">
+              <h3>Benefits</h3>
+              <ul>
+                <li>Portable full-body therapy anywhere</li>
+                <li>Intuitive tablet interface</li>
+                <li>App-based session tracking</li>
+                <li>Ideal for travel and home use</li>
+                <li>Same Swiss quality in a compact form</li>
+              </ul>
+            </div>
+            <div class="product-actions">
+              <button class="button button-primary" style="font-size:1rem;padding:1rem 2rem;" onclick="Cart.add('sbs-omnium1', 1)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+                Add to Cart
+              </button>
+              <a href="sbs-components.html" class="button button-secondary">View Components</a>
+            </div>
+            <div style="margin-top:1.5rem;padding:1rem;background:var(--soft-green);border-radius:8px;border-left:4px solid var(--wellness-green);">
+              <p style="font-size:0.85rem;color:#2e7d32;margin:0;"><strong>Free shipping</strong> on this order. Includes 2-year warranty and expert setup support.</p>
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #E2E8F0;">
+              <p style="font-size: 0.9rem; color: var(--medium-grey); margin-bottom: 0.5rem; text-align: center;"><strong>Need Help?</strong></p>
+              <a href="contact.html" class="button" style="width: 100%; background: var(--brand-blue); color: white;">Book Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 style="font-family:var(--font-display);color:var(--deep-blue);margin-bottom:1.5rem;">Technical Specifications</h2>
+        <table class="specs-table">
+          <tr><td>Mat Dimensions</td><td>180cm x 60cm (foldable)</td></tr>
+          <tr><td>Control Unit</td><td>Android tablet with custom PEMF app</td></tr>
+          <tr><td>Frequency Range</td><td>0.5 - 25 Hz (sawtooth & square wave)</td></tr>
+          <tr><td>Intensity</td><td>1 - 300 microtesla (adjustable)</td></tr>
+          <tr><td>Programs</td><td>6 preset + customizable via app</td></tr>
+          <tr><td>Battery</td><td>Rechargeable lithium-ion</td></tr>
+          <tr><td>Power</td><td>110-240V universal adapter</td></tr>
+          <tr><td>Warranty</td><td>2 years standard</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="site-top-link" aria-label="Back to top section" style="background: transparent; padding: 0 1rem;">
+      <a href="#top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+        TOP
+      </a>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/images/creatives/footer-logo-final.jpg" alt="Revora Life" style="height: 90px; width: auto;"></div>
+          <p class="footer-about">Your premium destination for PEMF wellness technology.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+                    <ul class="footer-links">
+            <li><a href="swiss-bionic.html">Swiss Bionic</a></li>
+            <li><a href="olylife.html">OlyLife</a></li>
+            <li><a href="qilife.html">QiLife</a></li>
+            <li><a href="suppliers.html">All Suppliers / Store</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Learn</h4>
+          <ul class="footer-links">
+            <li><a href="what-is-pemf.html">What is PEMF?</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal-row">
+        <a href="privacy-policy.html">Privacy Policy</a><span>|</span><a href="terms-of-service.html">Terms of Service</a><span>|</span><a href="sitemap.html">Sitemap</a>
+      </div>
+      <div style="border-top: 1px solid rgba(255,255,255,0.15); margin-top: 2rem; padding-top: 1.5rem; font-size: 0.75rem; line-height: 1.5; opacity: 0.7; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <p>This website provides general information only and is not medical advice; products are not intended to diagnose, treat, cure, or prevent disease.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Revora Life. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
